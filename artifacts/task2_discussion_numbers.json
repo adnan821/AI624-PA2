@@ -1,0 +1,183 @@
+{
+  "warmup_iters": 150,
+  "warmup_acc": 26.3,
+  "direction_check": {
+    "prune high S (keep -S largest) [paper]": 0.00012418164203609194,
+    "prune low S  (keep +S largest) [inverted]": 1.6737050743786952e-05
+  },
+  "direction_chosen_confirmed": true,
+  "taylor_check": {
+    "dense_grad_flow": 4.399578697444895e-05,
+    "rows": [
+      {
+        "weights changed": "highest S (GraSP removes these)",
+        "epsilon": 0.001,
+        "predicted dG": 1.4462986728176475e-06,
+        "actual dG": 2.0591814191561753e-06,
+        "actual / predicted": 1.4237594612076376
+      },
+      {
+        "weights changed": "highest S (GraSP removes these)",
+        "epsilon": 0.01,
+        "predicted dG": 1.4462986728176475e-05,
+        "actual dG": 1.5220431720308625e-05,
+        "actual / predicted": 1.052371270635028
+      },
+      {
+        "weights changed": "highest S (GraSP removes these)",
+        "epsilon": 0.1,
+        "predicted dG": 0.00014462986728176476,
+        "actual dG": 2.2897161152002354e-05,
+        "actual / predicted": 0.15831557881052746
+      },
+      {
+        "weights changed": "highest S (GraSP removes these)",
+        "epsilon": 1.0,
+        "predicted dG": 0.0014462986728176475,
+        "actual dG": -1.0952221288107467e-05,
+        "actual / predicted": -0.0075725861427851475
+      },
+      {
+        "weights changed": "lowest S",
+        "epsilon": 0.001,
+        "predicted dG": -1.4736060984432698e-06,
+        "actual dG": -1.6666038291646146e-06,
+        "actual / predicted": 1.1309696878461817
+      },
+      {
+        "weights changed": "lowest S",
+        "epsilon": 0.01,
+        "predicted dG": -1.4736060984432698e-05,
+        "actual dG": -1.193679394617675e-05,
+        "actual / predicted": 0.8100396679130795
+      },
+      {
+        "weights changed": "lowest S",
+        "epsilon": 0.1,
+        "predicted dG": -0.00014736060984432697,
+        "actual dG": -2.794948397877306e-05,
+        "actual / predicted": 0.1896672659559372
+      },
+      {
+        "weights changed": "lowest S",
+        "epsilon": 1.0,
+        "predicted dG": -0.0014736060984432697,
+        "actual dG": -3.787736685689769e-05,
+        "actual / predicted": 0.02570386136221319
+      }
+    ]
+  },
+  "mag_final_test": 90.57,
+  "grasp_final_test": 87.85,
+  "mag_criterion_s": 0.006031888071447611,
+  "grasp_criterion_s": 0.7108599580824375,
+  "criterion_ratio": 117.85032309325264,
+  "mag_min_density": 0.13719134860568571,
+  "grasp_min_density": 0.11631944444444442,
+  "mag_min_density_layer": "layer4.0.conv2",
+  "grasp_min_density_layer": "conv1",
+  "task1_global_test": 92.8,
+  "task1_local_test": 92.52,
+  "stages": {
+    "iterative_magnitude": [
+      {
+        "stage": 1,
+        "iteration": 150,
+        "epoch": 0.3836317135549872,
+        "target_sparsity": 0.4,
+        "achieved_sparsity": 0.40000001791416107,
+        "weights_pruned_this_stage": 4465741,
+        "acc_before_prune": 26.3,
+        "acc_after_prune": 27.0,
+        "acc_drop": -0.6999999999999993,
+        "acc_before_prune_bn_recal": 27.95,
+        "acc_after_prune_bn_recal": 27.5,
+        "acc_drop_bn_recal": 0.4499999999999993,
+        "criterion_seconds": 0.0020274840062484145,
+        "min_layer_density": 0.5532315572102864
+      },
+      {
+        "stage": 2,
+        "iteration": 400,
+        "epoch": 1.0230179028132993,
+        "target_sparsity": 0.6000000000000001,
+        "achieved_sparsity": 0.5999999820858389,
+        "weights_pruned_this_stage": 2232870,
+        "acc_before_prune": 43.3,
+        "acc_after_prune": 41.9,
+        "acc_drop": 1.3999999999999986,
+        "acc_before_prune_bn_recal": 42.6,
+        "acc_after_prune_bn_recal": 41.55,
+        "acc_drop_bn_recal": 1.0500000000000043,
+        "criterion_seconds": 0.0020574460504576564,
+        "min_layer_density": 0.33904732598198783
+      },
+      {
+        "stage": 3,
+        "iteration": 1150,
+        "epoch": 2.9411764705882355,
+        "target_sparsity": 0.8,
+        "achieved_sparsity": 0.8000000358283221,
+        "weights_pruned_this_stage": 2232871,
+        "acc_before_prune": 63.45,
+        "acc_after_prune": 63.45,
+        "acc_drop": 0.0,
+        "acc_before_prune_bn_recal": 64.25,
+        "acc_after_prune_bn_recal": 64.15,
+        "acc_drop_bn_recal": 0.09999999999999432,
+        "criterion_seconds": 0.00194695801474154,
+        "min_layer_density": 0.13719134860568571
+      }
+    ],
+    "iterative_grasp": [
+      {
+        "stage": 1,
+        "iteration": 150,
+        "epoch": 0.3836317135549872,
+        "target_sparsity": 0.4,
+        "achieved_sparsity": 0.40000001791416107,
+        "weights_pruned_this_stage": 4465741,
+        "acc_before_prune": 26.3,
+        "acc_after_prune": 9.8,
+        "acc_drop": 16.5,
+        "acc_before_prune_bn_recal": 27.95,
+        "acc_after_prune_bn_recal": 9.3,
+        "acc_drop_bn_recal": 18.65,
+        "criterion_seconds": 0.23299602209590375,
+        "min_layer_density": 0.4907407407407407
+      },
+      {
+        "stage": 2,
+        "iteration": 450,
+        "epoch": 1.1508951406649617,
+        "target_sparsity": 0.6000000000000001,
+        "achieved_sparsity": 0.5999999820858389,
+        "weights_pruned_this_stage": 2232870,
+        "acc_before_prune": 43.4,
+        "acc_after_prune": 4.75,
+        "acc_drop": 38.65,
+        "acc_before_prune_bn_recal": 44.6,
+        "acc_after_prune_bn_recal": 8.8,
+        "acc_drop_bn_recal": 35.8,
+        "criterion_seconds": 0.22930773999541998,
+        "min_layer_density": 0.23321759259259256
+      },
+      {
+        "stage": 3,
+        "iteration": 1300,
+        "epoch": 3.3248081841432224,
+        "target_sparsity": 0.8,
+        "achieved_sparsity": 0.8000000358283221,
+        "weights_pruned_this_stage": 2232871,
+        "acc_before_prune": 60.4,
+        "acc_after_prune": 9.8,
+        "acc_drop": 50.599999999999994,
+        "acc_before_prune_bn_recal": 60.75,
+        "acc_after_prune_bn_recal": 7.75,
+        "acc_drop_bn_recal": 53.0,
+        "criterion_seconds": 0.24855619599111378,
+        "min_layer_density": 0.11631944444444442
+      }
+    ]
+  }
+}

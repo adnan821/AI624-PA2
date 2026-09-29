@@ -1,0 +1,63 @@
+{
+  "params_dense": 11173962,
+  "params_structured": 2222386,
+  "sparsity": 0.8011102955245418,
+  "top1_preft": 87.98,
+  "top1_postft": 86.45,
+  "recovered_pp": -1.5300000000000011,
+  "delta_vs_dense_pp": -6.61999999999999,
+  "macs_dense": 140186624.0,
+  "macs_structured": 61979648.0,
+  "mac_reduction": 0.5578775903755269,
+  "latency_dense_ms": 6.640546694397926,
+  "latency_structured_ms": 5.59179738513194,
+  "speedup": 1.1875513787488994,
+  "size_dense_mb": 42.7006778717041,
+  "size_structured_mb": 8.541193008422852,
+  "size_reduction": 0.7999752361289156,
+  "peak_mem_dense_mb": 64.0,
+  "peak_mem_structured_mb": 64.0,
+  "energy_dense": 8.969654453124999,
+  "energy_structured": 6.865248109375,
+  "prune_minutes": 0.3886648678492444,
+  "ft_minutes": 1.8913959045836237,
+  "recon_residuals": {
+    "layer1.1": 0.0990838816246141,
+    "layer2.0": 0.06899527196797513,
+    "layer2.1": 0.029159458154094715,
+    "layer3.0": 0.07231645824243417,
+    "layer3.1": 0.018652958724930713,
+    "layer4.0": 0.00018160833695804967,
+    "layer4.1": 3.821982497235622e-05
+  },
+  "widths": {
+    "layer1.1": [
+      64,
+      28
+    ],
+    "layer2.0": [
+      128,
+      56
+    ],
+    "layer2.1": [
+      128,
+      93
+    ],
+    "layer3.0": [
+      256,
+      74
+    ],
+    "layer3.1": [
+      256,
+      37
+    ],
+    "layer4.0": [
+      512,
+      74
+    ],
+    "layer4.1": [
+      512,
+      74
+    ]
+  }
+}

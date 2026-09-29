@@ -1,0 +1,36 @@
+{
+  "overall_sparsity": 0.7999998566867115,
+  "dense_top1": 93.07,
+  "most_sensitive_layers": {
+    "conv1": 70.75,
+    "layer2.0.conv1": 31.95,
+    "layer2.1.conv1": 10.8,
+    "layer1.0.conv1": 4.95,
+    "layer2.0.conv2": 4.85
+  },
+  "least_sensitive_layers": {
+    "layer4.0.downsample.0": -0.05,
+    "layer4.0.conv1": -0.1,
+    "layer4.0.conv2": -0.1,
+    "layer4.1.conv2": -0.1,
+    "fc": -0.1
+  },
+  "local_preft_top1": 82.42,
+  "global_preft_top1": 93.11,
+  "local_ft_top1": 91.53,
+  "global_ft_top1": 87.06,
+  "local_recovered_pp": 9.11,
+  "global_recovered_pp": -6.049999999999997,
+  "global_max_layer_sparsity": 0.9941071404351128,
+  "global_min_layer_sparsity": 0.0015625000000000222,
+  "global_most_pruned_layer": "layer4.1.conv1",
+  "global_least_pruned_layer": "fc",
+  "dense_ckpt_mb": 42.70163917541504,
+  "coo_int64_mask_mb": 87.41402626037598,
+  "coo_int32_mb": 42.697909355163574,
+  "latency_dense_ms": 6.666153986006975,
+  "latency_masked_ms": 6.646626216825098,
+  "latency_coo_ms": 7.434316424187273,
+  "macs_dense": 140186624.0,
+  "macs_effective_local": 37844528.0
+}

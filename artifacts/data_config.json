@@ -1,0 +1,22 @@
+{
+  "dataset": "CIFAR-10",
+  "train_images": 50000,
+  "test_images": 10000,
+  "input_resolution": "32x32x3",
+  "train_batch_size": 128,
+  "eval_batch_size": 256,
+  "profile_batch_size": 128,
+  "normalization_mean": [
+    0.4914,
+    0.4822,
+    0.4465
+  ],
+  "normalization_std": [
+    0.2471,
+    0.2435,
+    0.2616
+  ],
+  "train_augmentation": "RandomCrop(32, padding=4) + RandomHorizontalFlip()",
+  "eval_augmentation": "none (ToTensor + Normalize only)",
+  "dataloader_workers": 8
+}

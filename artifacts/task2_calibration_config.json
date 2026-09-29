@@ -1,0 +1,21 @@
+{
+  "calibration_samples": 100,
+  "samples_per_class": 10,
+  "calibration_batch_size": 50,
+  "number_of_batches": 2,
+  "gradient_combination": "averaged over batches (sum / n_batches) for both g and Hg",
+  "class_counts": {
+    "plane": 10,
+    "car": 10,
+    "bird": 10,
+    "cat": 10,
+    "deer": 10,
+    "dog": 10,
+    "frog": 10,
+    "horse": 10,
+    "ship": 10,
+    "truck": 10
+  },
+  "source": "CIFAR-10 training set, evaluation transforms (no augmentation)",
+  "logit_temperature": 200.0
+}
